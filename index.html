@@ -11,60 +11,75 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <div class="hero__text">
-          <p class="eyebrow">PERSONAL RESUME</p>
+    <div class="resume">
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="avatar">LA</div>
           <h1>李艾橦</h1>
-          <p class="subtitle">设计与创新的跨界实践者</p>
-          <p class="summary">
-            本科毕业于工业设计（工科），目前攻读艺术科技与商业硕士研究生，关注设计、体验与商业价值的融合，
-            擅长从人群需求出发进行概念思考与表达，追求既具创造力又具有现实落地能力的设计实践。
-          </p>
-          <div class="hero__actions">
-            <a href="#contact" class="button primary">联系我</a>
-            <a href="#about" class="button ghost">了解更多</a>
-          </div>
+          <p class="role">设计与创新实践者</p>
         </div>
 
-        <aside class="profile-card">
-          <div class="profile-card__badge">CV</div>
-          <div class="profile-card__meta">
-            <div>
-              <span>姓名</span>
-              <strong>李艾橦</strong>
-            </div>
-            <div>
-              <span>学历</span>
-              <strong>本科：工业设计（工科）</strong>
-            </div>
-            <div>
-              <span>学位</span>
-              <strong>硕士：艺术科技与商业（在读）</strong>
-            </div>
-          </div>
-        </aside>
-      </header>
+        <section class="sidebar-section">
+          <h2>个人信息</h2>
+          <ul class="info-list">
+            <li><span>学历</span><strong>本科：工业设计（工科）</strong></li>
+            <li><span>学位</span><strong>硕士：艺术科技与商业（在读）</strong></li>
+            <li><span>状态</span><strong>求职中</strong></li>
+            <li><span>方向</span><strong>设计 / 体验 / 创新</strong></li>
+          </ul>
+        </section>
 
-      <main>
-        <section id="about" class="section intro">
-          <div class="section-head">
-            <span>ABOUT</span>
-            <h2>个人简介</h2>
+        <section class="sidebar-section">
+          <h2>技能</h2>
+          <div class="tags">
+            <span>工业设计</span>
+            <span>视觉表达</span>
+            <span>体验设计</span>
+            <span>概念研究</span>
+            <span>用户洞察</span>
+            <span>创意沟通</span>
+            <span>艺术科技</span>
+            <span>商业创新</span>
           </div>
-          <div class="intro__layout">
-            <article class="panel">
-              <h3>设计思维</h3>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>联系我</h2>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:liaitong.design@example.com">liaitong.design@example.com</a></li>
+            <li><span>微信</span><strong>liaitong-design</strong></li>
+            <li><span>地区</span><strong>中国</strong></li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="content">
+        <header class="hero">
+          <p class="eyebrow">PERSONAL RESUME</p>
+          <h2>设计思维与创新表达</h2>
+          <p>
+            我关注用户需求、体验细节和创意落地，具备从概念研究到方案表达的设计实践能力。
+            本科背景在工业设计，现正在攻读艺术科技与商业硕士，以跨学科视角探索设计与商业、科技的融合路径。
+          </p>
+        </header>
+
+        <section class="section">
+          <div class="section-head">
+            <span>Profile</span>
+            <h3>个人简介</h3>
+          </div>
+          <div class="two-col">
+            <article class="card">
+              <h4>专业特质</h4>
               <p>
-                我相信好的设计应当建立在真实需求之上，兼顾功能、情感和体验的完整表达。
-                在学习与实践中，我持续提升问题拆解、概念生成与方案迭代的能力。
+                擅长从问题出发进行研究与拆解，注重功能、审美和用户体验之间的平衡，
+                在概念生成与方案表达中持续追求清晰、可感和具传播力的设计语言。
               </p>
             </article>
-            <article class="panel">
-              <h3>成长方向</h3>
+            <article class="card">
+              <h4>成长方向</h4>
               <p>
-                目前正深入艺术科技与商业的交叉领域，探索将创意、技术和商业价值协同推进的可能性，
-                努力在设计实践中实现更具影响力的表达。
+                关注艺术科技与商业创新的交叉领域，探索创意实践如何在文化体验、产品创新与市场价值之间形成协同。
               </p>
             </article>
           </div>
@@ -72,26 +87,25 @@
 
         <section class="section">
           <div class="section-head">
-            <span>EDUCATION</span>
-            <h2>教育背景</h2>
+            <span>Education</span>
+            <h3>教育背景</h3>
           </div>
           <div class="timeline">
             <div class="timeline-item">
-              <div class="timeline-item__label">本科</div>
-              <div class="timeline-item__content">
-                <h3>工业设计（工科）</h3>
+              <div class="time">本科</div>
+              <div class="detail">
+                <h4>工业设计（工科）</h4>
                 <p>
-                  系统学习了工业设计的基础方法论，包括方案构思、用户研究、概念表达与产品思维，
-                  培养了对功能与审美之间平衡的理解。
+                  系统学习设计方法、产品思维、概念表达与用户研究，建立较强的工业设计基础与审美判断。
                 </p>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-item__label">硕士</div>
-              <div class="timeline-item__content">
-                <h3>艺术科技与商业（在读）</h3>
+              <div class="time">硕士</div>
+              <div class="detail">
+                <h4>艺术科技与商业（在读）</h4>
                 <p>
-                  聚焦艺术、科技与商业协同创新，探讨创意作品如何在文化体验与市场场景中创造更强价值。
+                  聚焦创意产业、科技应用与商业创新的结合，持续提升跨学科设计表达与项目落地能力。
                 </p>
               </div>
             </div>
@@ -100,65 +114,38 @@
 
         <section class="section">
           <div class="section-head">
-            <span>SKILLS</span>
-            <h2>核心能力</h2>
+            <span>Focus</span>
+            <h3>研究方向</h3>
           </div>
-          <div class="tag-list">
-            <span>工业设计</span>
-            <span>视觉表达</span>
-            <span>用户体验</span>
-            <span>概念设计</span>
-            <span>创意研究</span>
-            <span>方案沟通</span>
-            <span>艺术科技</span>
-            <span>商业创新</span>
-            <span>项目协作</span>
+          <div class="cards three-col">
+            <article class="card small">
+              <h4>创意设计</h4>
+              <p>以用户视角与场景思维推进概念方案的构建与表达。</p>
+            </article>
+            <article class="card small">
+              <h4>体验研究</h4>
+              <p>关注功能逻辑、情感感知与交互节奏提升使用体验。</p>
+            </article>
+            <article class="card small">
+              <h4>创新探索</h4>
+              <p>结合艺术、科技与商业思维寻找更有价值的创意落地方式。</p>
+            </article>
           </div>
         </section>
 
         <section class="section">
           <div class="section-head">
-            <span>PROJECTS</span>
-            <h2>实践方向</h2>
+            <span>Strengths</span>
+            <h3>个人优势</h3>
           </div>
-          <div class="card-grid">
-            <article class="mini-card">
-              <span class="mini-card__index">01</span>
-              <h3>创意设计</h3>
-              <p>以用户视角和场景思维推进概念方案的构建与表达。</p>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__index">02</span>
-              <h3>体验研究</h3>
-              <p>关注使用过程中的情感感知与交互节奏，提升产品体验的可感性。</p>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__index">03</span>
-              <h3>创新探索</h3>
-              <p>结合艺术、科技与商业视角，持续寻找跨界创新的落地可能。</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" class="section contact">
-          <div class="section-head">
-            <span>CONTACT</span>
-            <h2>联系我</h2>
-          </div>
-          <div class="contact-box">
-            <p>欢迎联系我进行交流、合作或了解更多关于我的设计与创作方向。</p>
-            <ul>
-              <li><strong>Email</strong><span>liaitong.design@example.com</span></li>
-              <li><strong>微信</strong><span>liaitong-design</span></li>
-              <li><strong>地区</strong><span>中国</span></li>
-            </ul>
-          </div>
+          <ul class="strengths">
+            <li>具备较强的设计感与审美判断力</li>
+            <li>善于将抽象概念转化为清晰表达</li>
+            <li>重视细节与体验逻辑的完整性</li>
+            <li>能够在跨学科语境中保持创新思维与实践落地意识</li>
+          </ul>
         </section>
       </main>
-
-      <footer>
-        <p>© <span id="year"></span> Li Aitong · Personal Resume</p>
-      </footer>
     </div>
 
     <script src="script.js"></script>
